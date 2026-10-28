@@ -1,3 +1,61 @@
+## 1.3.0
+
+### New
+- **10 new drinks**, found as scrap, sold in the store and in the new Drink Machine, each can in its own style:
+  - **Hush Soda** ($120): **Silent**. Your footsteps, landings and dropped items are half as loud, and monsters hear them from only half as far. Opening and drinking it makes a sound, but never alerts monsters.
+  - **Craft Beer** ($80): **Cold One** while you drink (stamina refills fast, full when you finish), then **Tipsy** + **Wobbly**. A second beer while Tipsy: **Drunk** + **Staggering**. Faster, higher jumps, weight slows you less, your voice carries further, less damage, slower paranoia, Hoarding Bugs don't mind you, a deeper voice and hiccups (everyone hears them, and you flinch); you slip when you walk.
+  - **Belch Cola** ($60): **Big Burp**, 3 burps on **[R]** (setting "Burp key"). Hoarding Bugs back off, Spore Lizards run, a Snare Flea lets go.
+  - **Rocket Fizz** ($80): **Fizz Jump**, one more jump in mid-air.
+  - **Lucky Lemonade** ($150): **Lucky**, 25% of hits miss you, and you survive one thing that would kill you: a Bracken, Forest Giant, Masked or Old Bird grab lets go of you, an Eyeless Dog's lunge goes past you. Works with SnatchinBrackenFORK's drag.
+  - **Hunch Soda** ($100): **Danger Sense**, a ping every few seconds marks monsters and traps within 50 m through walls.
+  - **Buddy Spritz** ($70): **Crew Sense**, teammates and dead teammates' bodies on the game's compass with their names. Near a teammate: **Chill** (calmer, a bit more stamina refill, slow healing up to 50 HP, not while bleeding). Near a dead teammate's body: **We'll Make It** (15% less damage, 30% while carrying the body).
+  - **Focus Fizz** ($60): **Locked In**, longer scanner reach (its wave goes further and stays bright longer), faster hands and ladder climbing; turrets, landmines and spike traps don't notice you.
+  - **Party Pop** ($80): confetti and a party horn; **Party** for you and everyone near you. The more of your crew within 15 m, the better: alone or 1 teammate 7% faster and 15% quicker stamina refill, 2 teammates 12% / 35%, 3 or more 20% / 50%. The slime dances for you and never hurts you.
+  - **Ghost Pepper Pop** ($120): **Hot Stuff**, a monster that hits you gets stunned for 2 s with the Zap Gun's lightning (and maybe burned), its hit hurts less, spider webs burn away, steam out of your ears.
+- **Drink Machine** (ship upgrade, $500, needs LethalLib): the Soda Machine's blue sibling, "Company After Hours", with the 10 new drinks. It prices and stocks drinks the same way as the Soda Machine. One free random drink per player per day from each machine.
+- **High value drinks** cost a set price in the machines (not the "Drink price %"): Lucky Lemonade $100, Hunch Soda $70 and Ghost Pepper Pop $90 in the Drink Machine; Climate Soda $80, Cheesy Soda $90 and Kosher Soda $100 in the Soda Machine. Each has its own setting in its machine's config section.
+- **DRINKS store section**: all drinks now have their own section in the store (works with AdvancedCompany's terminal too), not CONSUMABLES. With FrailtyMedical, its MEDICAL section comes first.
+- New sounds: hiccups, burps and Fizz Jump.
+- With EladsHUD+'s colours on, the game's own stamina meter is tinted too (setting "Tint stamina bar"), not only EladsHUD+'s bar.
+- New config sections 11 to 15. The compass settings (at the top, offset) count for Crew Sense too.
+
+### Balance changes
+| What | Before | Now |
+|---|---|---|
+| Red soda: Sugar Rush | 45 s | 60 s |
+| Peach Soda: price | $50 | $70 |
+| Peach Soda: Sugar Mend | 50 HP | 35 HP over 90 s |
+| Climate / Cheesy / Kosher Soda in the Soda Machine | 50% of the store price | set price $80 / $90 / $100 |
+
+Settings still at their old default are moved to the new default once; changed settings are kept.
+
+### Icon changes
+<img src="https://raw.githubusercontent.com/SleepyMiles/Drinkable/main/images/changes_1_3_0_icons.png" width="720">
+
+- New mod icon: the Red soda and a Craft Beer, poster style, "DRINKABLE".
+- Buddy Spritz has a new can.
+- Buff colours: Sugar Mend green to pink (its health and stamina bar colour too), Sharp Sight pink to cyan, Silent purple to gold, Danger Sense purple to gold, Party green to purple.
+- New icons for the 16 new buffs and debuffs.
+- Chill shows no timer while you're near your crew; the 3 s countdown shows once you walk away. We'll Make It shows its damage reduction (15% or 30%) instead of a timer.
+
+### Tooltip changes
+- **Chill**: "Your crew is close: you calm down, your stamina refills a little faster and you slowly heal up to half health (not while you bleed)."
+- **We'll Make It**: "Not leaving them behind: near a fallen teammate's body you take less damage, and even less while you carry them."
+- **Crew Sense**: "...your compass shows your teammates and the bodies of the ones who didn't make it. Near a teammate you Chill; near a fallen one, We'll Make It."
+- **Party**: now ends with "The more of your crew around you, the better."
+- **Tipsy / Drunk**: list everything they do (speed, jumps, weight, damage, paranoia, voice, Hoarding Bugs).
+
+## 1.2.0
+- **Kosher Soda reworked.** Equilibrium no longer gives damage reduction: it makes **Adrenaline** and **Equivalence** possible.
+  - **Adrenaline** (was Borrowed Time): getting hit makes you faster and sprinting free for a moment. The damage adds up while it lasts, in 4 tiers (I: +15% for 1.5 s ... IV: +45% for 3 s); the icon shows the tier.
+  - **Equivalence**: now starts when you get a FrailtyPlus injury or the Cadaver infection (60%+). It halves your injuries' time left (and every new one's while it lasts), the infection grows half as fast, you take 10% less damage and heal 2 HP every 5 s, even while bleeding. It lasts as long as your injuries (for the infection: as long as Equilibrium). Its injuries no longer pause.
+- **Cheese Sense** uses the game's own compass: it lights up and shows the nearest scrap and the nearest exit (main entrance or fire exit, whichever is nearest), with distance and above / below. New settings: compass at the top of the screen, compass offset X / Y (the old compass bar settings are gone).
+- **Grounded** is now called **Adapted** (Climate Soda).
+- New icons for every buff (Adrenaline has one per tier), and new tooltips.
+- The **Pill bottle is removed** (FrailtyMedical has the pills now): it's plain scrap again, not in the store or the Soda Machine. Numb and Regeneration are gone with it.
+- Fixed: a store-bought drink's "Drink : [LMB]" tip stayed on screen after drinking it until you scrolled.
+- Renamed inside too (no more "DrinkableSoda" anywhere): the config is now `Miles.Drinkable.cfg`. Your old settings and save data (empty cans, Soda Machine) are moved over once. FrailtyPlus must be 1.2.0 or newer for its parts.
+
 ## 1.1.1
 - Fixed healing over time giving 1 HP less than it should (Peach Soda's Sugar Mend, the pills' Regeneration).
 - README: every buff / debuff icon with what it does.
