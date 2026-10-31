@@ -6,6 +6,8 @@
 - Fixed: after leaving a lobby and hosting or joining another one, the others no longer saw or heard your drinks (and the machines stopped syncing) until you restarted the game.
 - Fixed: without EladsHUD+, the buff icons could sit on top of FrailtyPlus' injury icons, and drifted a little further off with every icon before them. They now line up along the same tilted line as FrailtyPlus' icons.
 - Fixed: on some setups (where BepInEx' own object is removed when the game loads a scene) the mod lost track of the other mods: EladsHUD+'s status row, AdvancedCompany's terminal and TerminalFormatter weren't found.
+- Fixed: when Lucky got you out of a Forest Giant's grab, the giant kept playing its eating animation and slid after you. It's now stunned for 5 s (new setting "Lucky Forest Giant stun"), so you can get away.
+- Buff icons without EladsHUD+: the frame moves like FrailtyPlus' icons (its dashes change a few times a second), and debuff pictures slowly pulse red, like FrailtyPlus' injuries.
 
 ## 1.3.1
 - Fixed an error that make player cannot drink any drink at all, StaticNetcodeLib (by Xilophor) is now a required dependency.
