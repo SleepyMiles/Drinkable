@@ -2,7 +2,7 @@
 - Fixed: without FrailtyPlus installed, the game's input system broke on startup (the "Could not load file or assembly 'Frailty'" error), so you couldn't drink, the Burp key didn't work and the game showed a save data error. FrailtyPlus is optional again, as it should be.
 - Fixed: without StaticNetcodeLib you couldn't drink ("Drink: NullReferenceException"). Drinking ran on BepInEx' own object, which the game can remove when it loads a scene; now it runs on its own object.
 - StaticNetcodeLib is no longer needed (Drinkable never used it).
-- Fixed: typing part of a drink's name in the terminal bought the wrong thing ("belch" bought a Belt bag). The first word of a drink's name, or its name written together ("belchcola"), now finds the drink.
+- Fixed: typing part of a drink's name in the terminal bought the wrong thing ("belch" bought a Belt bag). The first word of a drink's name, or its name written together ("belchcola"), now finds the drink. Typing the first two words of the name ("first aid", "belch cola 3") always finds it too, even when the game has its own command for the first word ("first" opens a log).
 - Fixed: after leaving a lobby and hosting or joining another one, the others no longer saw or heard your drinks (and the machines stopped syncing) until you restarted the game.
 - Fixed: without EladsHUD+, the buff icons could sit on top of FrailtyPlus' injury icons, and drifted a little further off with every icon before them. They now line up along the same tilted line as FrailtyPlus' icons.
 - Fixed: on some setups (where BepInEx' own object is removed when the game loads a scene) the mod lost track of the other mods: EladsHUD+'s status row, AdvancedCompany's terminal and TerminalFormatter weren't found.
