@@ -2,12 +2,13 @@
 - Fixed: without FrailtyPlus installed, the game's input system broke on startup (the "Could not load file or assembly 'Frailty'" error), so you couldn't drink, the Burp key didn't work and the game showed a save data error. FrailtyPlus is optional again, as it should be.
 - Fixed: without StaticNetcodeLib you couldn't drink ("Drink: NullReferenceException"). Drinking ran on BepInEx' own object, which the game can remove when it loads a scene; now it runs on its own object.
 - StaticNetcodeLib is no longer needed (Drinkable never used it).
-- Fixed: typing part of a drink's name in the terminal bought the wrong thing ("belch" bought a Belt bag). The first word of a drink's name, or its name written together ("belchcola"), now finds the drink. Typing the first two words of the name ("first aid", "belch cola 3") always finds it too, even when the game has its own command for the first word ("first" opens a log).
+- Fixed: typing part of a drink's name in the terminal bought the wrong thing ("belch" bought a Belt bag). The first word of a drink's name, or its name written together ("belchcola"), now finds the drink. Typing the first two words of the name ("belch cola 3") always finds it too, even when the game has its own command for the first word.
 - Fixed: after leaving a lobby and hosting or joining another one, the others no longer saw or heard your drinks (and the machines stopped syncing) until you restarted the game.
 - Fixed: without EladsHUD+, the buff icons could sit on top of FrailtyPlus' injury icons, and drifted a little further off with every icon before them. They now line up along the same tilted line as FrailtyPlus' icons.
 - Fixed: on some setups (where BepInEx' own object is removed when the game loads a scene) the mod lost track of the other mods: EladsHUD+'s status row, AdvancedCompany's terminal and TerminalFormatter weren't found.
 - Fixed: when Lucky got you out of a Forest Giant's grab, the giant kept playing its eating animation and slid after you. It's now stunned for 5 s (new setting "Lucky Forest Giant stun"), so you can get away.
 - Buff icons without EladsHUD+: the frame moves like FrailtyPlus' icons (its dashes change a few times a second), and debuff pictures slowly pulse red, like FrailtyPlus' injuries.
+- **Cleaner settings:** no numbers in front of the sections any more, and fewer of them, in this order: General (now with finding drinks as scrap), Drinkable, Store price, Machine (the Soda Machine and the Drink Machine together; their prices are now "Soda Machine price" / "Drink Machine price"), Sodas Buff 1 to 4 (every drink's buffs, grouped by drink), Display. The Debug section is gone. Your settings are moved over once.
 
 ## 1.3.1
 - Fixed an error that make player cannot drink any drink at all, StaticNetcodeLib (by Xilophor) is now a required dependency.

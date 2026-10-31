@@ -145,22 +145,19 @@ They're found as scrap and sold in the store like the sodas, and they're in the 
 
 ## Configuration
 
-`BepInEx/config/Miles.Drinkable.cfg`, or in-game with **LethalConfig**. Everything except `7. Display` and `8. Debug` is **synced from the host**. Your old `Miles.DrinkableSoda.cfg` settings are moved over once.
+`BepInEx/config/Miles.Drinkable.cfg`, or in-game with **LethalConfig**. Everything except `Display` is **synced from the host**. Your old settings (from older versions and from `Miles.DrinkableSoda.cfg`) are moved over once.
 
 | Section | What |
 |---|---|
-| 1. General | store on / off, store sale max %, empty value %, Hydration, drinking noise |
-| 2. Store prices | price of each drink |
-| 3. Drinkable | turn each drink on / off |
-| 4-6 | strength and time of every buff (6. Kosher Soda: Adrenaline tiers, Equivalence) |
-| 7. Display | burp key (Belch Cola), store DRINKS section, bar colors (stamina: EladsHUD+ or the game's meter; health: EladsHUD+), buff icons without EladsHUD+ (on / off, position, size), compass at the top / offset while Cheese Sense or Crew Sense is on (your own settings) |
-| 9. Soda Machine | sold or not, price, free drinks per player per day (each machine), rarity (free drink), sell drinks after the free one, drink price %, limited stock (min / max per day, special drinks max and odds, show stock left), machine prices of Climate / Cheesy / Kosher Soda |
-| 10. Finding drinks | found as scrap or not, how often |
-| 11. Hush Soda, Rocket Fizz, Lucky Lemonade, Belch Cola | Silent time / noise range / volume, Fizz Jump time, Lucky time / miss chance / save chance / Forest Giant stun, Big Burp time / burps / cooldown / range / scare time |
-| 12. Craft Beer | time, Cold One refill, damage reduction, paranoia speed, Drunk melee damage / speed / jump / carry weight / voice range, Wobbly / Staggering slip |
-| 13. Drink Machine | sold or not, price, machine prices of Lucky Lemonade / Hunch Soda / Ghost Pepper Pop (everything else is in 9 and counts for both machines) |
-| 14. Hunch Soda, Buddy Spritz, Focus Fizz | Danger Sense time / range / how often / how long the marks stay, Crew Sense time / nearby range, Chill calm / stamina / heal, We'll Make It damage reduction, Locked In time / scan range / bright wave / hands / climb |
-| 15. Party Pop, Ghost Pepper Pop | Party time / speed / stamina refill / range, Hot Stuff time / stun / stun cooldown / damage reduction / burn back chance, Burn Through |
+| General | store on / off, store sale max %, empty value %, Hydration, drinking noise, found as scrap or not, how often |
+| Drinkable | turn each drink on / off |
+| Store price | price of each drink |
+| Machine | both machines: sold or not and price of each, free drinks per player per day (each machine), rarity (free drink), sell drinks after the free one, drink price %, limited stock (min / max per day, special drinks max and odds, show stock left), machine prices of the high value drinks (Climate / Cheesy / Kosher Soda, Lucky Lemonade / Hunch Soda / Ghost Pepper Pop) |
+| Sodas Buff 1 | Red soda and Bolt Cola (Sugar Rush, Sugar Crash), Peach Soda (Sugar Mend), Sparkle Soda (Brawn), Mystery Soda (its buffs, Cure All, Hyponatremia) |
+| Sodas Buff 2 | ACE Soda (Sharp Sight), Vanilla Soda (Exquisite), Cheesy Soda (Cheese Sense), Climate Soda (Adapted), Kosher Soda (Equilibrium, Adrenaline tiers, Equivalence, Dehydration) |
+| Sodas Buff 3 | Hush Soda (Silent), Rocket Fizz (Fizz Jump), Lucky Lemonade (Lucky, Forest Giant stun), Belch Cola (Big Burp), Craft Beer (Cold One, Tipsy / Drunk, Wobbly / Staggering) |
+| Sodas Buff 4 | Hunch Soda (Danger Sense), Buddy Spritz (Crew Sense, Chill, We'll Make It), Focus Fizz (Locked In), Party Pop (Party), Ghost Pepper Pop (Hot Stuff, Burn Through) |
+| Display | your own settings: burp key (Belch Cola), store DRINKS section, bar colors (stamina: EladsHUD+ or the game's meter; health: EladsHUD+), buff icons without EladsHUD+ (on / off, position, size), compass at the top / offset while Cheese Sense or Crew Sense is on |
 
 ---
 
