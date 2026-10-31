@@ -1,3 +1,10 @@
+## 1.3.2
+- Fixed: without FrailtyPlus installed, the game's input system broke on startup (the "Could not load file or assembly 'Frailty'" error), so you couldn't drink, the Burp key didn't work and the game showed a save data error. FrailtyPlus is optional again, as it should be.
+- StaticNetcodeLib is no longer needed (Drinkable never used it; the 1.3.1 drinking problem was the error above).
+
+## 1.3.1
+- Fixed an error that make player cannot drink any drink at all, StaticNetcodeLib (by Xilophor) is now a required dependency.
+
 ## 1.3.0
 
 ### New

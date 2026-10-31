@@ -189,11 +189,13 @@ These mods are made by **SleepyMiles** to work as one set. They share one row of
 ## Future plans
 
 - **More drinks.**
+- **Fix the bug from Lucky Lemonade.**
+
+Please report any bugs through my GitHub.
 
 ## Credits
 
 - Sounds: "Opening a Soda Can" by **unfa** and "Drinking.wav" by **craigglenday** (Freesound, CC0).
-- For now the burp, the hiccup and Lucky's chime are the game's own sounds (the Whoopie cushion, the Rubber Ducky and the level-up sound), played from the game, not shipped with the mod.
 - Soda ideas inspired by the **LC Office** drinks by **Piggy** (maintained by **JacobG5**).
 - Label fonts: **Bangers**, **Titan One**, **Alfa Slab One**, **Anton**, **Yellowtail**, **Fraunces**, **Bebas Neue**, **Archivo Black**, **Bungee** and **Abril Fatface** (SIL Open Font License), **Luckiest Guy** (Apache 2.0).
 - Made by **SleepyMiles**.
