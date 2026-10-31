@@ -149,7 +149,7 @@ They're found as scrap and sold in the store like the sodas, and they're in the 
 
 | Section | What |
 |---|---|
-| General | store on / off, store sale max %, empty value %, Hydration, drinking noise, found as scrap or not, how often |
+| General | store on / off, store sale max %, empty value %, Hydration, drinking noise, Speed Balance (only the fastest speed buff counts; off by default), found as scrap or not, how often |
 | Drinkable | turn each drink on / off |
 | Store price | price of each drink |
 | Machine | both machines: sold or not and price of each, free drinks per player per day (each machine), rarity (free drink), sell drinks after the free one, drink price %, limited stock (min / max per day, special drinks max and odds, show stock left), machine prices of the high value drinks (Climate / Cheesy / Kosher Soda, Lucky Lemonade / Hunch Soda / Ghost Pepper Pop) |
