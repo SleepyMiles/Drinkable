@@ -4,6 +4,8 @@
 - StaticNetcodeLib is no longer needed (Drinkable never used it).
 - Fixed: typing part of a drink's name in the terminal bought the wrong thing ("belch" bought a Belt bag). The first word of a drink's name, or its name written together ("belchcola"), now finds the drink.
 - Fixed: after leaving a lobby and hosting or joining another one, the others no longer saw or heard your drinks (and the machines stopped syncing) until you restarted the game.
+- Fixed: without EladsHUD+, the buff icons could sit on top of FrailtyPlus' injury icons, and drifted a little further off with every icon before them. They now line up along the same tilted line as FrailtyPlus' icons.
+- Fixed: on some setups (where BepInEx' own object is removed when the game loads a scene) the mod lost track of the other mods: EladsHUD+'s status row, AdvancedCompany's terminal and TerminalFormatter weren't found.
 
 ## 1.3.1
 - Fixed an error that make player cannot drink any drink at all, StaticNetcodeLib (by Xilophor) is now a required dependency.
