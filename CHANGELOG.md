@@ -2,6 +2,8 @@
 - Fixed: without FrailtyPlus installed, the game's input system broke on startup (the "Could not load file or assembly 'Frailty'" error), so you couldn't drink, the Burp key didn't work and the game showed a save data error. FrailtyPlus is optional again, as it should be.
 - Fixed: without StaticNetcodeLib you couldn't drink ("Drink: NullReferenceException"). Drinking ran on BepInEx' own object, which the game can remove when it loads a scene; now it runs on its own object.
 - StaticNetcodeLib is no longer needed (Drinkable never used it).
+- Fixed: typing part of a drink's name in the terminal bought the wrong thing ("belch" bought a Belt bag). The first word of a drink's name, or its name written together ("belchcola"), now finds the drink.
+- Fixed: after leaving a lobby and hosting or joining another one, the others no longer saw or heard your drinks (and the machines stopped syncing) until you restarted the game.
 
 ## 1.3.1
 - Fixed an error that make player cannot drink any drink at all, StaticNetcodeLib (by Xilophor) is now a required dependency.
