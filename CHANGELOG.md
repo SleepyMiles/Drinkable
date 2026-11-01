@@ -6,10 +6,13 @@
 - Fixed: after leaving a lobby and hosting or joining another one, the others no longer saw or heard your drinks (and the machines stopped syncing) until you restarted the game.
 - Fixed: without EladsHUD+, the buff icons could sit on top of FrailtyPlus' injury icons, and drifted a little further off with every icon before them. They now line up along the same tilted line as FrailtyPlus' icons.
 - Fixed: on some setups (where BepInEx' own object is removed when the game loads a scene) the mod lost track of the other mods: EladsHUD+'s status row, AdvancedCompany's terminal and TerminalFormatter weren't found.
-- Fixed: when Lucky got you out of a Forest Giant's grab, the giant kept playing its eating animation and slid after you. Its eating animation is now cut off and it's stunned for 5 s (new setting "Lucky Forest Giant stun"); it can't grab you again until 3 s after the stun, so you can get away.
+- Fixed: when Lucky got you out of a Forest Giant's grab, the giant kept playing its eating animation and slid after you. Now it lifts you up and holds you for 1-3 s (never long enough to eat you), then lets go: its eating animation is cut off and it's stunned for 5 s (new setting "Lucky Forest Giant stun"); it can't grab you again until 3 s after the stun, so you can get away.
 - Fixed: We'll Make It (Buddy Spritz, 15%) didn't come near a dead teammate's body, only while carrying one (30%): the body counted from the spot where the player died, not where it really lies. Crew Sense's compass shows bodies where they really are too.
 - **Speed Balance** (new setting in General, off by default): on = only your fastest speed buff counts, speed buffs don't stack. Slowdowns always count.
 - Buff icons without EladsHUD+: the frame moves like FrailtyPlus' icons (its dashes change a few times a second), and debuff pictures slowly pulse red, like FrailtyPlus' injuries.
+
+<img src="https://raw.githubusercontent.com/SleepyMiles/Drinkable/main/images/changes_1_3_2_frames.gif" width="720">
+
 - **Cleaner settings:** no numbers in front of the sections any more, and fewer of them, in this order: General (now with finding drinks as scrap), Drinkable, Store price, Machine (the Soda Machine and the Drink Machine together; their prices are now "Soda Machine price" / "Drink Machine price"), Sodas Buff 1 to 4 (every drink's buffs, grouped by drink), Display. The Debug section is gone. Your settings are moved over once.
 
 ## 1.3.1
@@ -69,6 +72,9 @@ Settings still at their old default are moved to the new default once; changed s
 - **Cheese Sense** uses the game's own compass: it lights up and shows the nearest scrap and the nearest exit (main entrance or fire exit, whichever is nearest), with distance and above / below. New settings: compass at the top of the screen, compass offset X / Y (the old compass bar settings are gone).
 - **Grounded** is now called **Adapted** (Climate Soda).
 - New icons for every buff (Adrenaline has one per tier), and new tooltips.
+
+<img src="https://raw.githubusercontent.com/SleepyMiles/Drinkable/main/images/changes_1_2_0_icons.png" width="720">
+
 - The **Pill bottle is removed** (FrailtyMedical has the pills now): it's plain scrap again, not in the store or the Soda Machine. Numb and Regeneration are gone with it.
 - Fixed: a store-bought drink's "Drink : [LMB]" tip stayed on screen after drinking it until you scrolled.
 - Renamed inside too (no more "DrinkableSoda" anywhere): the config is now `Miles.Drinkable.cfg`. Your old settings and save data (empty cans, Soda Machine) are moved over once. FrailtyPlus must be 1.2.0 or newer for its parts.
